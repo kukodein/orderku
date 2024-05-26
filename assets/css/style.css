@@ -215,6 +215,7 @@
 
 #navbarSearch .input-group input[type="search" i]::-webkit-search-cancel-button {
 	margin-top: auto;
+	margin-left: 10px;
 }
 
 section#main .offcanvas {
