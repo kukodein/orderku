@@ -218,6 +218,10 @@
 	margin-left: 10px;
 }
 
+#navbarSearch .input-group input[type="search" i]::-webkit-search-cancel-button:hover {
+    opacity: 1;
+}
+
 section#main .offcanvas {
 	max-width: 300px;
 }
