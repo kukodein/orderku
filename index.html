@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OrderKu</title>
+	<meta name="description" content="">
+	<meta name="author" content="Kukode.com">
+
+	<link rel="icon" type="image/x-icon" href="assets/image/img-profile.jpg">
+
+	<link href="vendor/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="assets/js/color-modes.js"></script>
+</head>
+<body>
+
+<div id="cart-float-button" class="dropdown position-fixed bottom-0 end-0 mb-4 me-4 bd-mode-toggle">
+	<button type="button" class="btn btn-primary rounded-circle position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+		<i data-feather="shopping-bag" class="bi"></i>
+		<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+			9+ <span class="visually-hidden">unread messages</span>
+		</span>
+	</button>
+</div>
+
+<header class="navbar sticky-top bg-dark p-0 shadow container rounded-10" data-bs-theme="dark">
+	<div id="navbarMain" class="d-flex align-items-center w-100">
+		<ul class="navbar-nav flex-row">
+			<li class="nav-item text-nowrap">
+				<button class="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<i data-feather="menu" class="bi"></i>
+				</button>
+			</li>
+		</ul>
+		<a class="navbar-brand m-auto px-3 fs-5 text-white" href="./">OrderKu</a>
+		<ul class="navbar-nav flex-row">
+			<li class="nav-item text-nowrap">
+				<button class="nav-link px-3 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenuProfile" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<i data-feather="user" class="bi"></i>
+				</button>
+			</li>
+		</ul>
+	</div>
+
+	<div id="navbarSearch" class="navbar-search w-100 collapse show rounded-10">
+		<!-- <input class="form-control w-100 border-0 rounded-10" type="text" placeholder="Search" aria-label="Search"> -->
+		<div class="input-group input-group-sm">
+			<label class="input-group-text border-0 rounded-circle-left" for="form-navbar-search"><i data-feather="search" class="bi"></i></label>
+			<input id="form-navbar-search" type="search" class="form-control border-0 rounded-circle-right" placeholder="Search" aria-label="Search">
+		</div>
+	</div>
+</header>
+
+<section id="main">
+	<div class="container">
+		<div class="row">
+			<div class="sidebar p-0">
+				<div class="offcanvas offcanvas-start bg-light col-md-3 col-lg-2 w-100" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="sidebarMenuLabel">Main Menu</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#Dashboard">
+									<!-- <svg class="bi"><use xlink:href="#house-fill"/></svg> -->
+									<i data-feather="home" class="bi"></i>
+									Dashboard
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="sidebar p-0 bg-danger">
+				<div class="offcanvas offcanvas-end bg-light col-md-3 col-lg-2 w-100" tabindex="-1" id="sidebarMenuProfile" aria-labelledby="sidebarMenuProfileLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="sidebarMenuProfileLabel">Profile</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenuProfile" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#Dashboard">
+									<!-- <svg class="bi"><use xlink:href="#house-fill"/></svg> -->
+									<i data-feather="home" class="bi"></i>
+									Dashboard
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<main class="col container-small px-md-4 m-auto">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom d-none">
+					<h2 class="h2">Dashboard</h2>
+					<div class="btn-toolbar mb-2 mb-md-0">
+						<div class="btn-group me-2">
+							<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="profile-header text-center">
+					<div class="profile-image">
+						<img src="assets/image/img-profile.jpg" width="100" class="rounded-circle">
+					</div>
+					<div class="profile-text pt-3 pb-5">
+						<h1 class="h3">Ekologi.id</h1>
+						<p>Seorang hamba yang suka jalan-jalan.</p>
+					</div>
+				</div>
+				<div class="profile-link">
+					<p>Meta tags are specific snippets of text and image content that provide a summary for a webpage. Often meta tag data shows up whenever someone shares a link on social media, in messaging, or in your business chat software 🙌.</p>
+
+					<p>In addition meta tags can contain information to help search engines and other technical services scan your site to figure out what it's all about and whether or not it's legit!</p>
+
+					<p>Wait, but why can't I see meta data? Since the protocol was originally created for machines to examine, it is buried in code at the top of a website, which is exactly why this tool was created! Put any URL in the search box and our site helps you both visualize and edit the meta tag code so you can update it.</p>
+
+					<p>How valuable sharing on social media and ranking in Google are for your site determines how significantly you should focus on your meta tags.</p>
+
+					<p>Imagine walking into an abandoned store with shelves full of dust and a musty smell in the air 😕. A link to your site on Facebook or LinkedIn is often the very first interaction you have with a visitor and if it looks empty and unmaintained like a barren store, they'll never even consider clicking the link.</p>
+
+					<p>As part of most digital marketing campaigns, teams often create compelling copy and striking images, which conveniently lends itself perfectly to being a part of the meta data of your webpage. Double the value, half the work!</p>
+
+					<p>Meta tags are specific snippets of text and image content that provide a summary for a webpage. Often meta tag data shows up whenever someone shares a link on social media, in messaging, or in your business chat software 🙌.</p>
+
+					<p>In addition meta tags can contain information to help search engines and other technical services scan your site to figure out what it's all about and whether or not it's legit!</p>
+
+					<p>Wait, but why can't I see meta data? Since the protocol was originally created for machines to examine, it is buried in code at the top of a website, which is exactly why this tool was created! Put any URL in the search box and our site helps you both visualize and edit the meta tag code so you can update it.</p>
+
+					<p>How valuable sharing on social media and ranking in Google are for your site determines how significantly you should focus on your meta tags.</p>
+
+					<p>Imagine walking into an abandoned store with shelves full of dust and a musty smell in the air 😕. A link to your site on Facebook or LinkedIn is often the very first interaction you have with a visitor and if it looks empty and unmaintained like a barren store, they'll never even consider clicking the link.</p>
+
+					<p>As part of most digital marketing campaigns, teams often create compelling copy and striking images, which conveniently lends itself perfectly to being a part of the meta data of your webpage. Double the value, half the work!</p>
+				</div>
+				
+			</main>
+		</div>
+	</div>
+</section>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+	<div class="container">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body small">
+			...
+		</div>
+	</div>
+</div>
+
+<script src="vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/feather-icon/feather.min.js"></script>
+<script>feather.replace();</script>
+
+</body>
+</html>
+
